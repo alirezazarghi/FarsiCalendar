@@ -1,6 +1,17 @@
 # FarsiCalendar 0.1.0
 ### Farsi javascript calendar library
 
+### features
+
+1. None JQeruy (pure javascript)
+2. lightweight
+3. easy to use
+4. various themes
+
+### Coming up on next version
+1. Events
+2. Event management
+
 
 ![red](https://user-images.githubusercontent.com/20861442/27914603-f46bbb48-6278-11e7-8c2b-051b1ddac3d9.jpg "red")
 
