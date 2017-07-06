@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "IRAN Sans";
+    src:url("../fonts/IRANSans.ttf");
+}
+.pCalendarContainer{
+    font-family: "IRAN Sans";
+}
