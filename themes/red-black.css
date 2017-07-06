@@ -1,0 +1,64 @@
+.monthDays .day{
+     color: white;
+ }
+
+.monthDays .day:hover{
+
+    background-color: #c42121;
+}
+.monthDays .day.current{
+    background-color: #000000;
+}
+.monthDays .day{
+    border-radius: 50%;
+
+}
+.monthDays .day .eventDots{
+
+}
+
+.monthDays .dayNames {
+    color : #e6e6e6;
+
+}
+.monthDays .day.evented{
+    box-shadow: 0 0 3px white;
+}
+
+.calendarBody{
+    background-color: #E95451;
+}
+
+.calendarHeader .leftArrow,.calendarHeader .rightArrow{
+    color: white;
+}
+.calendarHeader .leftArrow:hover,.calendarHeader .rightArrow:hover{
+    transition: background-color 0.5s;
+    background-color: #aa2222;
+
+
+}
+.calendarHeader{
+    background-color: #e94c49;
+    border-bottom: 3px solid #f2f2f2;
+}
+
+.calendarHeader .headLabel .month{
+    color: #f2f2f2;
+}
+.calendarHeader .headLabel .year{
+    color: #f2f2f2;
+}
+
+.eventModal{
+    background: rgba(77, 77, 77,0.8);
+    z-index: 10;
+}
+.eventModal .modalBody{
+    background-color: white;
+    box-shadow: 0 0 3px white;
+}
+.modalBody .addButton{
+    background-color: #E95451;
+    border-radius: 2px;
+}

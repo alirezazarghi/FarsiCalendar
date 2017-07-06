@@ -1,0 +1,76 @@
+.monthDays .day{
+    color: white;
+}
+
+.monthDays .day:hover{
+    background-color: #FFFFFF;
+    color: #7B4EFE;
+    transition: color 0.4s;
+}
+.monthDays .day.current{
+    background-color: white;
+    box-shadow: 0 3px 3px #797C80;
+    color: #7B4EFE;
+}
+.monthDays .day{
+    border-radius: 50%;
+
+
+}
+.monthDays .day .eventDots{
+
+}
+.monthDays .day.evented{
+    box-shadow: 0 0 3px white;
+}
+.monthDays .dayNames {
+    color : #b493ff;
+
+
+}
+
+.calendarBody{
+    background-color: #7B4EFE;
+
+}
+
+.calendarHeader .leftArrow,.calendarHeader .rightArrow{
+    color: white;
+}
+.calendarHeader .leftArrow:hover,.calendarHeader .rightArrow:hover{
+    transition: background-color 0.5s;
+    background-color: #6942d3;
+
+
+}
+.calendarHeader{
+    background-color: #7B4EFE;
+    box-shadow: 0 3px 3px #6942d3;
+    z-index: 2;
+    text-shadow: 0 0 2px #797C80;
+}
+
+.calendarHeader .headLabel .month{
+    color: #f2f2f2;
+}
+.calendarHeader .headLabel .year{
+    color: white;
+}
+
+.eventModal{
+    background: rgba(77, 77, 77,0.8);
+    z-index: 10;
+}
+.eventModal .modalBody{
+    background-color: white;
+    box-shadow: 0 0 3px white;
+}
+.modalBody .addButton{
+    background-color: #E95451;
+    border-radius: 2px;
+}
+.pCalendarContainer{
+    box-shadow: 0 0 2px #7B4EFE;
+
+    overflow: hidden;
+}
