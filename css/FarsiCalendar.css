@@ -1,0 +1,214 @@
+.pCalendarContainer{
+    width: 100%;
+    position: relative;
+    direction: rtl;
+}
+
+.calendarBody button{
+    border: none;
+    box-sizing: content-box;
+    background: none;
+}
+
+/* monthDays view */
+
+.monthDays{
+    text-align: center;
+}
+.monthDays .dayNames div{
+    width: 12%;
+    margin: 1%;
+    text-align: center;
+    display: inline-block;
+}
+.monthDays  .day{
+    width: 12%;
+    padding-top: 12%;
+    display: inline-block;
+    margin: 1%;
+
+    position: relative;
+    cursor: pointer;
+}
+.monthDays .day span{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+}
+.monthDays .dayContainer .day:hover{
+    transition: background-color 0.7s;
+}
+.monthDays  .day.current{
+    background-color: black;
+
+}
+
+/* icons */
+@font-face {
+    font-family: "calIcon";
+    src: url(data:application/font-woff2;charset=utf-8;base64,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) format('woff2');
+}
+.calIcon{
+    font-family: "calIcon";
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* header */
+.calendarHeader{
+    height: 130px;
+}
+.calendarHeader .leftArrow i:before{
+    content: '\e801';
+}
+.calendarHeader .rightArrow i:before{
+    content: '\e800';
+}
+.calendarHeader .rightArrow,.calendarHeader .leftArrow{
+    width: 15%;
+    max-height: 100vh;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.calendarHeader .rightArrow i:before,.calendarHeader .leftArrow i:before{
+    line-height: 130px;
+    font-size: 35px;
+}
+.calendarHeader .headLabel{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+.calendarHeader .headLabel .year{
+    margin: 10px 0;
+    font-size: 40px;
+}
+
+.calendarHeader .headLabel .month{
+    margin: 5px;
+    font-size: 30px;
+}
+.calendarHeader > *{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+
+
+
+/* spinner */
+.pCalendarContainer .loading{
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    left: 0;top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+}
+.pCalendarContainer .loading i:before{
+    content: '\e839';
+    color: white;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+/* event */
+
+.eventModal{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.eventModal .modalBody{
+    margin-top: 10% ;
+    margin-left: auto;margin-right: auto;
+    width: 70%;
+    background-color: white;
+    height: 50%;
+    z-index: 11;
+    overflow: hidden;
+    position: relative;
+
+}
+.modalBody .addButton{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 -5px 5px -5px #333;
+    text-align: center;
+    cursor: pointer;
+
+}
+.modalBody .addButton > span{
+    position: relative;
+    font-size: 20px;
+    top:16px;
+}
+
+.modalBody .eventList{
+    width: 100%;
+    padding-bottom: 50%;
+    height: calc(100% - 60px);
+    padding-right: 17px;
+    overflow-y: scroll;
+    position: relative;
+
+}
+.modalBody .eventList > div{
+    height: 25%;
+    width: calc(100% + 17px);
+    border-bottom: 1px solid darkgrey;
+
+}
+.modalBody .eventList > div:last-of-type{
+    margin-bottom: 60%;
+}
+
+/* animations */
+@keyframes fadeIn {
+    from{opacity: 0}
+    to {opacity: 1}
+}
+@keyframes fadeOut {
+    from{opacity: 1}
+    to{opacity: 0}
+}
+
+.pCalendarContainer .fadeIn{
+    animation: 1s fadeIn 1;
+}
+.pCalendarContainer .fadeOut{
+    animation:0.6s fadeOut 1;
+}
